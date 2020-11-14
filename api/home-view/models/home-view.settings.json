@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_views",
+  "info": {
+    "name": "Home View",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation"
+    },
+    "subtitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation"
+    }
+  }
+}

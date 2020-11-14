@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "about-view",
+  "info": {
+    "name": "About View",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation"
+    },
+    "bio": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation-rich-text"
+    }
+  }
+}

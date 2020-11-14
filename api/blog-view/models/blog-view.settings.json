@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_views",
+  "info": {
+    "name": "Blog View",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation"
+    }
+  }
+}

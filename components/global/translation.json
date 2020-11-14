@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_global_translations",
+  "info": {
+    "name": "translation (text)",
+    "icon": "language",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fr": {
+      "type": "text"
+    },
+    "en": {
+      "type": "text"
+    }
+  }
+}

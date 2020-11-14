@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation",
+      "required": true
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation-rich-text",
+      "required": true
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "articles"
+    },
+    "original_title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "articles": {
+      "via": "categories",
+      "collection": "article",
+      "dominant": true
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.translation"
+    },
+    "original_title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

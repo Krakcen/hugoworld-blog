@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_translation_rich_text_s",
+  "info": {
+    "name": "Translation (rich text)",
+    "icon": "text-height"
+  },
+  "options": {},
+  "attributes": {
+    "fr": {
+      "type": "richtext"
+    },
+    "en": {
+      "type": "richtext"
+    }
+  }
+}
